@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            box-sizing: border-box;
+            padding:0;
+        }
+        body{
+            background-image: linear-gradient(45deg,rgba(16,16,16,0.75),rgba(75, 42, 163, 0.75)),url('image/accel-online-school-570-x-570-px.png');           background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form{
+            background-image: linear-gradient(60deg,rgba(133, 37, 82, 0.87),rgba(255, 31, 106, 0.661));
+            width:60vw;
+            padding: 0.5rem 1.5rem 0.8rem 1.5rem ;
+            border-radius: 30px;
+            text-align: center;
+        }
+        input{
+            padding: 20px;
+            width: 70vh;
+            outline: none;
+            border-radius: 10px;
+            margin: 2vh 0 0 0;
+            border: 0;
+            
+        }
+        input[type=submit]{
+            background-color: rgb(233, 26, 123);
+            font-size: 2.5vh;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+
+        }
+        
+       
+        
+      
+    </style>
+    <div class="first">
+        <h1><b>CONTACT FORM</b></h1><br><br>
+       
+            <div class="form">
+                <form action="course.html" onsubmit="return myfn()">
+                    <label for="name">NAME:</label><br>
+                    <input type="text" name="name" id="name" placeholder="enter your name.." ><br><br>
+                    <label for="email">EMAIL ID:</label><br>
+                    <input type="text" name="email" id="email" placeholder="enter your email id.."><br><br>
+                    <label for="comment">COMMENT:</label><br>
+                    <input type="text" name="comment" id="comment" placeholder="enter your comment .."><br><br>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+    </div>
+    <script>
+        function myfn(){
+            var x=document.getElementById("name").value;
+            var y=document.getElementById("email").value;
+            var z=document.getElementById("comment").value;
+            if(x=="null"||x==""){
+                alert("enter your name");
+                return false;
+            }
+            else if(y=="null"||y==""){
+                alert("enter your email id");
+                return false;
+            }
+            else if(z=="null"||z==""){
+                alert("enter your comment");
+                return false;
+
+            }
+        }
+    </script>
+
+</body>
+</html>

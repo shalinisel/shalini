@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course</title>
+</head>
+<body>
+    <style>
+        .nav{
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding:5px;
+        }
+        .nav ul{
+            padding-top: 10px;
+            display: inline-block;
+            justify-content: space-between;
+        
+        }
+        .nav a{
+            text-decoration: none;
+            font-size: larger;
+            color: rgb(241, 10, 10);
+            padding: 10px;
+        }
+        .row{
+            margin-top: 2px;
+            margin-left: 20px;
+        }
+        .column{
+            float: left;
+            width: 30%;
+            margin-bottom: 16px;
+            padding: 0 10px;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0,0, 0,0.2);
+        }
+        .container{
+            padding: 0 16px;
+            display: table;
+            content: "";
+        }
+
+        .button{
+            border: none;
+            display:inline-block;
+            padding: 8px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        .img{
+            height: 200px;
+        }
+        .button:hover{
+            background-color: #555;
+        }
+
+    </style>
+    <div class="nav">
+        <h1><img src="project/image/Capture.JPG" style="height: 70px;"></h1>
+        <ul>
+            <a href="index.html">HOME</a><span></span>
+            <a href="about.html">ABOUT</a><span></span>
+            <a href="contact.html">CONTACT US</a>
+
+        </ul>
+    </div>
+    <h1 style="text-align: center; font-weight: bold;">COURSE DETAILS</h1><br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="image/ds.jpg" style="width: 100%;">
+                <div class="container">
+                    <h2>DATA SCIENCE</h2>
+                    <P>Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.</P>
+                    <button class="button">JOIN NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="image/wb.png" style="width: 100%;">
+                <div class="container">
+                    <h2>WEB DESIGN</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process.</p>
+                    <button class="button">JOIN NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="image/cy.jpeg" style="width: 100%; height: 245px;">
+                <div class="container">
+                    <h2>CYBER SECURITY</h2>
+                    <p>Cyber security is the application of technologies, processes, and controls to protect systems, networks, programs, devices and data from cyber attacks.</p>
+                    <button class="button">JOIN NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding:10px;
+        
+        }
+        .nav ul{
+            padding-top: 10px;
+            display: inline-block;
+            justify-content: space-between;
+        
+        }
+        .nav a{
+            text-decoration: none;
+            font-size: larger;
+            color: rgb(241, 10, 10);
+            padding: 10px;
+        }
+         .container{
+            background-image: url('project/image/cc imagw.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding-top: 30px;
+            height: 300px;
+            line-height: 1.6;
+         }
+         .c1 h1{
+            line-height: 1.6;
+         }
+         .c1 button{
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            background-color: green;
+         }
+         .mini{
+            text-align: center;
+         }
+         .column{
+            float: left;
+            width: 25%;
+            padding: 20px;
+         }
+         .column img{
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            border: green;
+            border-style: dotted;
+         }
+         .row{
+            display: table;
+            content: "";
+         }
+
+         
+        
+    </style>
+    <div class="nav">
+        <h1><img src="project/image/Capture.JPG" style="height: 70px;"></h1>
+        <ul>
+            <a href="index.html">HOME</a><span></span>
+            <a href="project/about.html">ABOUT</a><span></span>
+            <a href="project/contact.html">CONTACT US</a>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="c1">
+            <h1 >LEARN THE LATEST SKILL</h1>
+            <h2>build skill with courses flexible online</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis at voluptates, distinctio, tempora molestiae incidunt minus reprehenderit magni dolorum unde beatae mollitia accusantium possimus harum quisquam fugit id sunt necessitatibus.</p>
+            <br><button class="button" onclick="myfn()">GET COURSES</button>
+        </div>
+    </div><br>
+    <div class="mini">
+            <h1>REMOTE EDUCATION</h1><br>
+            <h2>ONLINE COURSES</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="project/image/book.png">
+                    <h1>Specific courses</h1>
+                    <p>We are offer a wide range of courses for all ages and levels</p>
+                </div>
+                <div class="column">
+                        <img src="project/image/fl.png">
+                        <h1>Online courses</h1>
+                        <p>We are offer a wide range of courses for all ages and levels</p>
+                </div>
+                    <div class="column">
+                        <img src="project/image/ccs.png">
+                        <h1>Niche subjects</h1>
+                        <p>We are offer a wide range of courses for all ages and levels</p>
+
+                    </div>
+                    <div class="column">
+                        <img src="project/image/sc.jpg">
+                        <h1>Scholar programs</h1>
+                        <p>We are offer a wide range of courses for all ages and levels</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function myfn(){
+            window.open("project/course.html");
+        }
+    </script>
+</body>
+</html>
